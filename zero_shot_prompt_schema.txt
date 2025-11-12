@@ -1,0 +1,168 @@
+You are a world-class expert in the Objective Personality System (OPS). Your task is to perform a zero-shot classification for the **Observer vs. Decider** coin based on a comprehensive analysis of the provided transcript and associated metadata. Analyze the entire conversation as a whole to identify the subject's core, underlying cognitive preference.
+
+**Analysis Directive:**
+Your primary goal is to determine if the subject's cognitive energy is fundamentally geared towards **gathering new information (Observer)** or **closing down information to make judgments (Decider)**. Look for the "tidal wave" in their life—the recurring source of their problems and anxieties. Is it unresolved chaos and missing information (Observer), or unresolved issues with people and values (Decider)?
+
+**Observer (O) - "What is it?"**
+- **Core Pattern:** Prioritizes observing the world to build a complete and accurate map of reality. They are fundamentally stuck on understanding things, pathways, and systems. They delay judgment to absorb more information, fearing that acting on an incomplete map will lead to chaos and failure. Their core anxiety is about missing information and unforeseen variables.
+- **Look for:** Conversations dominated by exploring possibilities, gathering facts, debating theories, and understanding how things work. They get bogged down by the complexity of the world and can see many sides of an issue, making decisions difficult. Their problems stem from a feeling of being overwhelmed by chaos or not having a clear enough path forward.
+- **Keywords:** *How, what if, maybe, I need to understand, let's explore, the system, the data, the facts, anxiety, overwhelmed, chaos, control, the map, the path.*
+
+**Decider (D) - "Why does it matter?"**
+- **Core Pattern:** Prioritizes evaluating information to make judgments based on a set of values or reasons. They are fundamentally stuck on people, ethics, and what is right/wrong. They filter information through their value system, seeking to resolve conflicts and establish moral or logical clarity. Their core anxiety is about injustice, disharmony, and making the "wrong" choice.
+- **Look for:** Conversations dominated by discussions of fairness, personal values, relationships, what *should* be done, and who is responsible. They can process factual information but get stuck in loops of judgment about themselves or others. Their problems stem from conflicts with the "tribe," internal moral struggles, or feeling that their values are being violated.
+- **Keywords:** *Should, must, right, wrong, fair, unfair, my values, their fault, the tribe, the people, drama, depression, judgment, the reason, the principle.*
+
+**Key Diagnostic Questions:**
+- **Source of Frustration:** When a major project fails, what is the primary source of their pain? Is it the frustration of a flawed plan and wasted effort due to incorrect understanding of the variables (Observer)? Or is it the anger and disappointment from misaligned values, broken trust, or interpersonal conflict (Decider)?
+- **Problem-Solving Default:** When faced with a complex new problem, is their first instinct to grab a whiteboard, map out the system, and gather more data before acting (Observer)? Or is it to talk to the people involved, check for ethical alignment, and determine the "right" course of action based on principles (Decider)?
+- **Information vs. Justification:** When explaining a past decision, do they spend more time meticulously laying out all the information, possibilities, and data points they considered (Observer)? Or do they focus on the *reasons* and *values* that ultimately justified their final choice (Decider)?
+
+**Instructions:**
+1.  **Holistic Review:** Read through all the provided segments to get a complete picture of the subject's communication style. Do not focus on a single segment.
+2.  **Identify the Core Pattern:** Based on the entire transcript, determine the subject's dominant cognitive "problem." Are they fundamentally trying to solve the world's chaos (Observer) or the world's social/ethical dilemmas (Decider)?
+3.  **Provide a Confidence Score:** Rate your confidence in the classification on a scale of 0 to 100.
+4.  **Justify Your Choice:** Write a concise, evidence-based justification for your classification, referencing specific patterns or themes from the text.
+
+**Advanced Analysis & Disambiguation:**
+-   **Look for "Tidal Waves" (Life Patterns):** Go beyond the immediate conversation. Does the person's life story reveal a pattern of failure or frustration related to this coin?
+    -   *Observer Tidal Wave:* "I can see all the possibilities and pathways, but I can't decide which one to take." "I get stuck in research mode and never act."
+    -   *Decider Tidal Wave:* "I know what's right, but I can't get others on board." "I get bogged down in drama and social conflicts."
+-   **Seek Redundancy:** Look for multiple, redundant examples of the core pattern across different life contexts. A single instance is not enough.
+-   **Demasking & Trap Questions:**
+    -   *Is it D or just a confident O?* A confident Observer will talk about what they *know* (Oi) or what they are *seeing* (Oe). A Decider will talk about what they *value* (Fi) or what the *tribe values* (Fe).
+    -   *Distinguish from other coins:* Don't confuse the Decider's focus on people with Feminine Sensory (FS). FS is about the concrete details of people and experiences, while D is about the judgment and values associated with them.
+
+**Helper Questions:**
+-   **Observer:** "What are the pieces?" "How does this work?" "What else do I need to know?"
+-   **Decider:** "Is this good or bad?" "What is the right thing to do?" "How do we feel about this?"
+
+**False Positives & Common Traps:**
+    -   *Observer with strong opinions:* An Observer can have very strong, rigid opinions. The key is the *source*: their opinion comes from a model of *how things work* ("This is the most efficient system because..."). A Decider's strong opinion comes from a judgment of *what is right or valuable* ("This is the right thing to do because...").
+    -   *Decider who loves learning:* A Decider can love learning. The key is the *purpose*. Is the goal to build a comprehensive, objective map of the world for its own sake (Observer)? Or is it to gather information to better inform their judgments, values, and decisions (Decider)?
+    -   *Anxiety vs. Depression:* While not a rule, Observers are more prone to reporting chronic *anxiety* (fear of the unknown, future chaos, incomplete plans). Deciders are more prone to reporting *depression* (feelings of worthlessness, social disconnection, unresolved guilt or anger).
+
+**A Note on Metadata:**
+- Metadata for this coin is often **the least reliable** and should be used with extreme caution. It is a very weak supporting signal.
+- **Arousal/Dominance:** High arousal/dominance can indicate a passionate Observer explaining their complex system OR a passionate Decider defending a core value. It does not differentiate between them.
+- **Face Detection:** This is not a reliable indicator for O vs. D. An Oi-Observer looks away to access their internal map. An Fi-Decider may look away to consult their internal values. An Oe-Observer scans the environment. An Fe-Decider scans faces for social feedback. The motivation is different, but the physical action can be identical.
+
+Here are the translations of the parameters to JSON:
+
+General Metrics
+
+segments_count – number of segments in the recording.
+
+diag_segments_count – number of diagnostic segments (marked with P/T).
+
+total_duration_s – total duration of the recording in seconds.
+
+diag_duration_s – total duration of diagnostic segments.
+
+has_P / has_T – flag for the presence of P (Decider) and T (Observer) segments.
+
+Shares and Proportions
+
+P_share_w / T_share_w – share of energy weights assigned to P and T.
+
+P_share_minutes / T_share_minutes – time share of P vs T.
+
+fear_share_w / pain_share_w – share of emotion weights for fear vs pain.
+
+self_share_w / tribe_share_w – share of decision weights for self vs tribe.
+
+chaos_share_w / control_share_w – share of observation weights for chaos vs control.
+
+abstract_share – share of abstract content versus concrete content.
+
+Entropies
+
+entropy_OD – balance between P and T.
+
+entropy_dec_focus – balance between self and tribe.
+
+entropy_obs_focus – balance between chaos and control.
+
+Other Metrics
+
+organizer_share_w – proportion of organizer vs gatherer.
+
+missing_info_rate – frequency of the missing_info_loop flag occurrence.
+
+pronoun_ratio / pronoun_ratio_med – ratio of first-person pronouns to others.
+
+coffee_flip_rate – energy mismatch indicator (the so-called coffee shop flip).
+
+pf_lex_mean – mean intensity of pain/fear language.
+
+freakout_top – most frequent freakout categories.
+
+longest_P_span_s / longest_T_span_s – longest continuous P/T spans.
+
+switch_rate – frequency of P↔T switches.
+
+strong_P_count / strong_T_count – number of strong P/T segments (80th percentile).
+
+arousal_mean / std – mean and standard deviation of audio arousal.
+
+valence_mean – mean emotional valence.
+
+loudness_mean_dbfs – mean audio loudness in dBFS.
+
+bpm_mean – mean beats per minute.
+
+face_happy_share / face_fear_share – shares of emotions from facial expressions.
+
+transitions_per_min – number of emotional transitions per minute.
+
+face_detection_mean – mean face detection rate.
+
+Flags and Consistency
+
+ambiguity_score – level of classification ambiguity.
+
+consistency_flags – e.g., minutes_vs_energy_disagree, fear_extreme.
+
+continuity_mismatch – indicator of inconsistency between entropy, switches, and segment length.
+
+Dominance Block
+
+dominance.emo_root – dominant emotion (fear/pain).
+
+dominance.dec_focus – dominance of self vs tribe.
+
+dominance.obs_focus – dominance of chaos vs control.
+
+dominance.organizer_gatherer – dominance of organizer vs gatherer.
+
+dominance.abstract_vs_concrete – dominance of abstract vs concrete.
+
+dominance.OD_tag_PT – dominance of P vs T (with meta weight).
+
+dominance.booleans – frequencies of flags (flip, missing_info, meta).
+
+dominance.texts – aggregation of texts (trigger_txt, cluster_theme, freakout_type).
+
+Shortcuts
+
+dominant_emo_root – dominant emotion.
+
+dominant_dec_focus – dominant decision focus.
+
+dominant_obs_focus – dominant observation focus.
+
+dominant_organizer_gatherer – dominance in the organizer/gatherer axis.
+
+dominant_abstract_concrete – dominance of abstract vs concrete.
+
+dominant_OD_tag_PT – dominance of P vs T.
+
+
+Return ONLY one of the following exact JSON objects, with ASCII quotes:
+{"type":"Observer"}  OR  {"type":"Decider"}
+No prose. No extra keys. No markdown.
+
+---
+
+
+{segments_data}
